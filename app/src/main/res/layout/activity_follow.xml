@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FollowActivity"
+    android:background="@color/white">
+
+    // follow heading
+    <TextView
+        android:id="@+id/Follow_Teams_Main_Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="155dp"
+        android:text="@string/follow_teams"
+        android:textColor="@color/our_blue"
+        android:textColorLink="#060CB4"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_extrabold"/>
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Follow_Teams_Main_Heading"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="Search Teams"
+        android:padding="20dp"
+        android:shadowColor="#101010"
+        android:textColor="@color/black"
+        android:textColorHint="@color/our_grey"
+        android:drawableLeft="@drawable/small_search"
+        android:drawablePadding="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/teamline1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/search_bar"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/barcbtn"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/barcelona"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:background="@color/white">
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/madridbtn"
+            android:src="@drawable/realmadrid"
+            android:padding="10dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/manutdbtn"
+            android:src="@drawable/man_utd"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:background="@color/white">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/teamline2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/teamline1"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/celtic_button"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/celtic"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:background="@color/white">
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/rangersbtn"
+            android:src="@drawable/rangers"
+            android:padding="10dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/westhambtn"
+            android:src="@drawable/west_ham"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:background="@color/white">
+        </ImageButton>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/teamline3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/teamline2"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/abrdn_button"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/aberdeen"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:background="@color/white"
+            >
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/brightonbtn"
+            android:src="@drawable/brighton"
+            android:padding="10dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/gillbtn"
+            android:src="@drawable/gillingham"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:background="@color/white">
+        </ImageButton>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Following_Teams_Sub_Heading"
+        android:layout_below="@id/teamline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/following"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#060CB4"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/followteams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Following_Teams_Sub_Heading"
+        android:background="@color/white"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/barcbtn_flw"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/barcelona"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:background="@color/white"
+            android:visibility="invisible">
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/westham_flw"
+            android:src="@drawable/west_ham"
+            android:padding="10dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="20dp"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:backgroundTint="#060CB4" />
+
+</RelativeLayout>

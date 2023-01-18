@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MadSevActivity">
+
+    //madison's new code start
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/customborder">
+
+        <ImageButton
+            android:id="@+id/home_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_sports_soccer_24"
+            android:background="@color/white"
+            android:text="home"/>
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_search_24"
+            android:background="@color/white"
+            app:tint="@color/our_blue" />
+
+        <ImageButton
+            android:id="@+id/follow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_star_24"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        app:tint="@color/our_blue" />
+        //title
+
+        <TextView
+            android:id="@+id/madsev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:gravity="center"
+            android:text="Fixture Info"
+            android:textColor="@color/our_blue"
+            android:textSize="35sp" />
+
+        //Teams Heading
+
+        <TextView
+            android:id="@+id/teams_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/madsev"
+            android:layout_marginLeft="20dp"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="10dp"
+            android:text="TEAMS"
+            android:textColor="#060CB4" />
+
+    <LinearLayout
+        android:id="@+id/teams_playing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teams_h"
+        android:background="#ECECEC"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        // Team 1 (Madrid)
+
+        <TextView
+            android:id="@+id/madrid"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/realmadrid"
+            android:drawablePadding="10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="Real Madrid"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        //Vs
+
+        <TextView
+            android:id="@+id/vs"
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:layout_alignRight="@id/teams_h"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="Vs"
+            android:textColor="@color/black" />
+
+        //Team 2 (Sevilla)
+
+        <TextView
+            android:id="@+id/sevilla"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/sevilla"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="Sevilla"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/date_ko_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teams_playing"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/date_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATE"
+                android:background="#30ffffff"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#060CB4">
+            </TextView>
+
+            <TextView
+                android:id="@+id/kickoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KICK OFF"
+                android:background="#30ffffff"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:padding="10dp"
+                android:textColor="#060CB4"
+                android:layout_marginLeft="100dp"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/date_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_ko_h"
+            android:background="#ECECEC"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fix_date"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="13/06/22"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/fix_ko"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="15:30"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/stadium_info_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_time"
+            android:layout_marginLeft="20dp"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="10dp"
+            android:text="STADIUM INFO"
+            android:textColor="#060CB4" />
+
+        <RelativeLayout
+            android:id="@+id/image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stadium_info_h"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/stadium_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-1dp"
+                android:src="@drawable/bernabeu_map">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/stadium_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stadium_map"
+                android:text="Santiago Bernabéu Stadium"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="16dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stadium_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stadium_name"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Avenida Concha Espina 1, Madrid, ES 28036"
+                android:textSize="12dp"
+                android:layout_marginBottom="20dp">
+
+            </TextView>
+
+            //ticket button
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ticketbtn"
+                android:layout_below="@id/stadium_address"
+                android:text="Tickets"
+                android:backgroundTint="@color/our_blue"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                />
+        </RelativeLayout>
+
+
+</RelativeLayout>

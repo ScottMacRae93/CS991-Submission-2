@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MadridActivity">
+
+
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        app:tint="@color/our_blue" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            //title
+
+            <TextView
+                android:id="@+id/madridresults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:gravity="center"
+                android:text="MADRID\nRESULTS"
+                android:textColor="#060CB4"
+                android:textSize="35dp" />
+
+            //league (la liga)
+
+            <TextView
+                android:id="@+id/laliga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/laliga"
+                android:drawablePadding="50dp"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:padding="50dp"
+                android:text="La Liga"
+                android:textColor="#060CB4"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC" />
+
+            <TextView
+                android:id="@+id/fix1date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:padding="20dp"
+                android:text="13/06/2022"
+                android:textColor="#060CB4" />
+
+            //fix1 teams
+
+            <TextView
+                android:id="@+id/fix1teams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/realmadrid"
+                android:drawableRight="@drawable/sevilla"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Real Madrid vs Sevilla"
+                android:textColor="#060CB4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC" />
+            //fix2 dates
+
+            <TextView
+                android:id="@+id/fix2date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:padding="20dp"
+                android:text="14/06/2022"
+                android:textColor="#060CB4" />
+
+            //fix2 teams
+
+            <TextView
+                android:id="@+id/fix2teams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/getafe"
+                android:drawableRight="@drawable/valencia"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Getafe Vs Valencia"
+                android:textColor="#060CB4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC" />
+            //league (la liga 2)
+
+            <TextView
+                android:id="@+id/laliga2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/laliga"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:padding="20dp"
+                android:text="La Liga 2"
+                android:textColor="#060CB4"
+                android:textSize="20dp" />
+
+            //fix3 date
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC" />
+
+            <TextView
+                android:id="@+id/fix3date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:padding="20dp"
+                android:text="13/06/2022"
+                android:textColor="#060CB4" />
+
+            //fix3 teams
+
+            <TextView
+                android:id="@+id/fix3teams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="75dp"
+                android:drawableLeft="@drawable/leganes"
+                android:drawableRight="@drawable/burgos"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Leganes Vs Burgos"
+                android:textColor="#060CB4" />
+        </LinearLayout>
+    </ScrollView>
+
+    //madison's new code start
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/customborder">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_sports_soccer_24"
+            android:text="home" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_search_24"
+            android:background="@color/white"
+            app:tint="@color/our_blue"/>
+
+        <ImageButton
+            android:id="@+id/follow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_star_24"
+            android:background="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

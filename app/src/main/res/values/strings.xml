@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FusballFixtures</string>
+    <string name="title_activity_bernabeu">BernabeuActivity</string>
+    <string name="search_label">where would you like to go?</string>
+    <string name="search_by_city">SEARCH BY CITY OR TEAM </string>
+    <string name="select_dates"> SELECT DATES </string>
+    <string name="search_button_text">SEARCH</string>
+    <string name="find_fixtures_title">Find Fixtures</string>
+    <string name="follow_teams">Follow Teams</string>
+    <string name="barcelona">Barcelona</string>
+    <string name="real_madrid">Real Madrid</string>
+    <string name="man_utd">Man Utd</string>
+    <string name="celtic">Celtic</string>
+    <string name="rangers">Rangers</string>
+    <string name="west_ham">West Ham</string>
+    <string name="aberdeen">Aberdeen</string>
+    <string name="brighton">Brighton</string>
+    <string name="gillingham">Gillingham</string>
+    <string name="following">Following</string>
+    <string name="next">NEXT</string>
+</resources>

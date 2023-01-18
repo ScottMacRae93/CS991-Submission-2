@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    //title
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_title"
+        android:text="Register"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textColor="@color/our_blue"
+        android:layout_margin="50dp"
+        android:gravity="center"/>
+
+    //name box
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:elevation="4dp"
+        android:hint="Name"
+        android:padding="20dp"
+        android:shadowColor="#101010"
+        android:textColor="@color/black"
+        android:textColorHint="#7E7E7E"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:fontFamily="@font/montserrat_regular"/>
+
+    //email box
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:elevation="4dp"
+        android:hint="E-mail"
+        android:padding="20dp"
+        android:shadowColor="#101010"
+        android:textColor="@color/black"
+        android:textColorHint="#7E7E7E"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        />
+
+    //password box
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_email"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"
+        android:elevation="4dp"
+        android:hint="Password"
+        android:padding="20dp"
+        android:shadowColor="#101010"
+        android:textColor="@color/black"
+        android:textColorHint="#7E7E7E"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="textPassword"
+        />
+
+    // confirm password box
+    <EditText
+        android:id="@+id/reg_conf_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_password"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"
+        android:elevation="4dp"
+        android:hint="Confirm password"
+        android:padding="20dp"
+        android:shadowColor="#101010"
+        android:textColor="@color/black"
+        android:textColorHint="#7E7E7E"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="textPassword"
+        />
+
+    //create account button
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createaccbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_conf_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/our_blue"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="20sp"
+        android:text="CREATE ACCOUNT" />
+
+    // "already have account" text
+
+    <TextView
+        android:id="@+id/haveacc"
+        style="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createaccbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Already have an account?"
+        android:textColor="#0B3FC2" />
+
+</RelativeLayout>

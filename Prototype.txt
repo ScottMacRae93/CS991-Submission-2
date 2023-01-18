@@ -1,0 +1,6 @@
+These are just instructions / guidelines as to the usage of our Prototype. 
+1. Both the e-mail and password to be used to login are 'admin'. 
+2. The only results accessible will be those with a search date of 13 - 14 June and with locations as Lisbon / Madrid. 
+3. The only 'clickable' / responsive fixture will be Sevilla vs Madrid. 
+4. The followed teams are Barcelona and West Ham. 
+5. The map and tickets will take you out of the app and to a new location. 
